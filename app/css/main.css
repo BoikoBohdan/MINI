@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/*import Подключаем все библиотеки и внешнии стили*/
+/* основные стили*/
+body {
+  color: #4d4d4d;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px; }
+
+/*общие стиили*/
