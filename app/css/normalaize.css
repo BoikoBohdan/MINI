@@ -6,6 +6,9 @@ html, body, div, span, applet, main, object, iframe, h1, h2, h3, h4, h5, h6, p, 
   border: 0;
   font-size: 100%; }
 
+a {
+  text-decoration: none; }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, main, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
