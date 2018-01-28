@@ -253,10 +253,9 @@ header
 	margin-bottom: 35px
 
 .bars-title
-	color: #0d0d0d;
-	font-size: 16px;
-	font-weight: 600;
-	line-height: 28px;
+	color: #0d0d0d
+	font-weight: 600
+	line-height: 28px
 	text-transform: uppercase;
 	margin-bottom: 10px
 
@@ -276,3 +275,51 @@ header
 .bars-line > div
 	height: 10px
 	background-color: #f49d09;
+
+
+/* qoute */
+
+.box-quote
+	padding: 250px 0
+	color: #fff
+	text-align: center
+	background: url("../img/qoute.png") no-repeat center top
+	background-size: cover
+
+.block_text
+	color: #ffffff
+	font-size: 45px
+	font-weight: 700
+	line-height: 60px
+	position: relative
+	padding: 0 70px
+	margin-bottom: 33px
+
+.block_text:after, .block_text:before
+	content: '"'
+	display: block
+	position: absolute
+	font-size: 110px;
+	font-weight: 700;
+	line-height: 60px; 
+
+.block_text:before
+	left: 0
+
+.block_text:after
+	right: 0
+	top: 0
+
+.quote-author
+	font-size: 24px
+	font-weight: 700
+	line-height: 30px
+	text-transform: uppercase
+
+.quote-author:before
+	content: ""
+	display: block
+	width: 50px
+	height: 4px
+	margin: 0 auto 20px
+	background-color: #f39c12
