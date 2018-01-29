@@ -38,6 +38,11 @@ h6 {
   line-height: 25px;
   text-transform: uppercase; }
 
+.hr {
+  height: 2px;
+  background-color: #e6e6e6;
+  margin: 120px 0; }
+
 .btn {
   display: inline-block;
   vertical-align: middle;
@@ -198,9 +203,7 @@ header {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
-          align-items: flex-start;
-  border-bottom: 2px solid #e6e6e6;
-  padding-bottom: 120px; }
+          align-items: flex-start; }
 
 .about-wrap-content {
   display: -webkit-box;
@@ -287,8 +290,7 @@ header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  margin-top: 120px; }
+  display: flex; }
 
 .box-skills_item {
   -webkit-box-flex: 1;
@@ -566,3 +568,113 @@ header {
 .statistic-border h5 span {
   font-size: 45px;
   display: block; }
+
+/*service */
+.service {
+  padding: 105px 0 0 0; }
+
+.service-content-items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center; }
+
+.service-content-item {
+  padding-right: 30px; }
+
+.service-content-item:last-child {
+  padding-right: 0; }
+
+.service-content_icon {
+  width: 105px;
+  height: 105px;
+  border: 2px solid #f39c12;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 27px;
+  margin: 0 auto 30px; }
+
+.service-content-name {
+  color: #0d0d0d;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin-bottom: 25px; }
+
+.service-content_icon span:before {
+  color: #000; }
+
+.service-content-item:hover span:before {
+  color: #fff; }
+
+.service-content-item:hover .service-content_icon {
+  background: #f39c12; }
+
+/* pricelist */
+.box-pricing {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.box-pricing .service-content_icon {
+  margin-left: 0;
+  width: 125px;
+  height: 125px;
+  font-size: 32px; }
+
+.pricing {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.pricing_item {
+  border: 1px solid #e6e6e6; }
+
+.pricing-header {
+  padding: 25px 28px; }
+
+.pricing-header_title {
+  color: #0d0d0d;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25px;
+  text-transform: uppercase; }
+
+.pricing-header_title span {
+  display: block;
+  position: relative; }
+
+.pricing-header_title span:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 30px;
+  background: #f39c12;
+  margin: 0 auto; }
+
+.pricing_list li {
+  list-style-type: none; }
