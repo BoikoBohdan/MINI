@@ -468,7 +468,7 @@ header
 /*service */
 
 .service
-	padding: 105px 0 0 0 
+	padding: 105px 0 120px 0 
 
 .service-content-items
 	display: flex
@@ -525,7 +525,16 @@ header
 	display: flex
 
 .pricing_item
-	border: 1px solid #e6e6e6
+	border-top: 1px solid #e6e6e6
+	border-bottom: 1px solid #e6e6e6
+	width: 250px
+	text-align: center
+
+.pricing_item:first-child
+	border-left: 1px solid #e6e6e6
+
+.pricing_item:last-child
+	border-right: 1px solid #e6e6e6
 
 .pricing-header
 	padding: 25px 28px
@@ -534,7 +543,7 @@ header
 	color: #0d0d0d
 	font-size: 22px
 	font-weight: 700
-	line-height: 25px
+	line-height: 35px
 	text-transform: uppercase
 
 .pricing-header_title span
@@ -548,6 +557,103 @@ header
 	width: 30px
 	background: #f39c12
 	margin: 0 auto
+	margin-left: 5px
 
 .pricing_list li
 	list-style-type: none
+	padding: 13px 0
+	color: #737373;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+
+.pricing_list li:nth-child(odd)
+	background-color: #fafafa
+	display: flex
+	align-items: center
+	justify-content: center
+
+.pricing-fotter 
+	padding: 40px 0
+	background: #fafafa
+
+.pricing-fotter .btn
+	border: 2px solid #f39c12
+	color: #0d0d0d
+	font-weight: 700
+	font-size: 14px
+
+.pricing-fotter .btn:hover
+	color: #fff
+
+/*price list  hover */
+
+.pricing_item:hover .pricing-header_title span:before
+	background: #fff
+
+.pricing_item:hover .pricing-header
+	background: #f39c12
+	color: #fff
+
+.pricing_item:hover .pricing-header_title
+	color: #fff
+
+.pricing_item:hover  .pricing-header
+	margin-top: -20px
+	padding: 45px 28px 25px
+
+.pricing_item:hover .pricing_list li:nth-child(odd)
+	background: #e6e6e6
+
+.pricing_item:hover .pricing_list li:nth-child(even)
+	background: #f2f2f2
+
+.pricing_item:hover .pricing-fotter 
+	background: #e6e6e6
+
+.pricing_item:hover .pricing-fotter
+	margin-bottom: -20px
+
+
+/* response */
+
+.response .response-name
+	color: #ffffff
+	font-size: 24px
+	font-weight: 700
+	line-height: 60px
+	text-transform: uppercase
+	position: relative
+	text-align: center
+	margin-bottom: 30px
+
+.response .response-name:after
+	content: ""
+	position: absolute
+	width: 50px
+	height: 4px
+	background-color: #f39c12
+	top: 100%
+	left: 50%
+	margin-left: -25px
+
+.response p
+	color: #ffffff
+	text-align: center
+	font-size: 22px
+	font-weight: 300
+	font-style: italic
+	line-height: 30px
+	padding: 0 185px
+
+.respnonse_img
+	display: flex
+	justify-content: center
+	margin-top: 25px
+	border-radius: 50%
+
+
+/* portfolio */ 
+
+.portfolio 
+	padding: 120px 0
