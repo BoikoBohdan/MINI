@@ -7,6 +7,9 @@ body
   font-family: "Open Sans", Arial, sans-serif
   font-size: 16px
 
+input, textarea
+	outline: none
+
 .wrapper
 	max-width: 1250px
 	margin: 0 auto
@@ -860,10 +863,28 @@ header
 .blog-posts-img
 	position: relative
 	margin-bottom: 24px
+	width: 100%
+	height: 300px
+	background-color: #b7b7b7
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: 58px
+
+.blog-posts-img img
+	width: 100%
+
+.blog-posts-img_link
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	z-index: 2
 
 .blog-posts-img-footer
 	position: absolute
-	bottom: 5px
+	bottom: 0px
 	right: -1px
 	display: flex
 	align-items: flex-end
@@ -899,6 +920,7 @@ header
 	letter-spacing: -0.28px
 	min-width: 88px
 	margin-right: 40px
+	text-align: right
 
 .blog-posts-content_date span
 	display: block
@@ -916,3 +938,230 @@ header
 .blog-posts-content .btn:hover
 	background: #f39c12
 	color: #fff
+
+
+/* clients */
+
+.clients
+	text-align: center
+
+.client-header
+	color: #ffffff
+	font-size: 30px
+	font-weight: 700
+	line-height: 60px
+	text-transform: uppercase
+
+.client-list
+	list-style: none
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	justify-content: space-between
+	margin-top: 55px
+
+.client-list a
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 257px
+	height: 162px
+	border: 2px solid rgba(255, 255, 255, 0.25)
+	margin-bottom: 20px
+
+
+/* contact */
+	
+.contact
+	padding: 120px 0
+
+.contact-block
+	display: flex
+
+.contact-form
+	width: 53%
+
+.contact-info
+	width: 47%
+	padding-left: 55px
+
+.contact-info_title
+	margin-bottom: 30px
+
+.contact-info p 
+	color: #595959
+	font-size: 15px
+	font-weight: 400
+	line-height: 28px
+	margin-bottom: 25px
+
+.contact-info-list
+	list-style: none
+
+.contact-info-list_item
+	display: flex
+	margin-bottom: 8px
+	align-items: center
+
+.contact-info-list_item_ico
+	display: flex
+	flex: none
+	justify-content: center
+	align-items: center
+	font-size: 18px
+	color: #0d0d0d
+	width: 34px
+	height: 34px
+	border: 2px solid #f39c12
+	border-radius: 50%
+	margin-right: 20px
+
+.contact-info-list_item_text, .contact-info-list_item_text a
+	color: #0d0d0d
+	font-size: 16px
+	font-weight: 400
+	line-height: 25px
+	letter-spacing: 0px
+
+.contact-info-list_item_text
+	letter-spacing: -0.32px !important
+	
+.contact-form
+	margin-bottom: 30px
+
+.contact-form_title
+	margin-bottom: 40px
+
+.font-control
+	display: block
+	width: 100% 
+	height: 45px
+	border: 2px solid #d9d9d9
+	background-color: #fff
+	color: #808080
+	font-size: 15px
+	font-weight: 400
+	line-height: 26px
+	padding: 0 25px
+
+.contact-form
+	width: 620px
+
+.font-control:focus, .form-field_pole:focus
+	border: 2px solid #f39c12
+
+.form-field
+	position: relative
+	margin-bottom: 10px
+	text-align: center
+
+.form-field span
+	position: absolute
+	z-index: 2
+	text-align: center
+	margin: 0 auto
+	right: 30px
+	top: 40%
+	color: #808080
+	font-size: 18px
+
+.form-field:nth-child(2) span
+	font-size: 16px
+
+.form-field:nth-child(3) span
+	top: 12px
+
+.form-field_pole
+	display: block
+	width: 100% 
+	font-family: "Open Sans"
+	border: 2px solid #d9d9d9
+	background-color: #fff
+	color: #808080
+	font-size: 15px
+	font-weight: 400
+	line-height: 26px
+	padding: 0 25px
+
+.btn-sub
+	margin-top: 17px
+	background-color: #fff
+	color: #0d0d0d  
+	border-color: #f39c12
+
+.btn-sub:hover
+	background-color: #f39c12
+
+
+
+/* map */
+
+.map
+	position: relative
+	width: 100%
+	overflow: hidden
+
+#map 
+  height: 600px
+  width: 100%
+
+.map:after, .map:before
+	content: ''
+	position: absolute
+	width: 0
+	height: 0
+       
+.map:after
+	bottom: 0px
+	border-left: 100vw solid transparent
+	border-bottom: 100px solid #fff
+
+.map:before
+	top: 0px
+	z-index: 3
+	border-right: 100vw solid transparent
+	border-top: 100px solid #fff
+
+.footer
+	margin: 40px 0
+
+.footer-info
+	display: flex
+	height: 100%
+	justify-content: space-between
+	align-items: center
+
+.footer-block
+	display: flex
+
+.footer-block:first-child
+	color: #0d0d0d
+	font-family: "Open Sans - Semibold"
+	font-size: 14px
+	font-weight: 400
+	text-transform: uppercase
+	position: relative
+
+.footer-right
+	margin-right: 20px
+
+.footer-right:after
+	content: ''
+	position: absolute
+	width: 1px
+	height: 15px
+	background-color: #a6a6a6
+	right: 55%
+
+.footer-social
+	list-style: none
+	display: flex
+
+.footer-social li
+	margin-left: 20px
+	color: #0d0d0d
+	transition: color .3s
+
+.footer-social li:hover i
+	color: #f39c12
+
