@@ -16,6 +16,7 @@ input, textarea
 	padding: 0 40px
 	width: 100%
 
+
 h1
 	color: #fff
 	text-transform: uppercase
@@ -29,6 +30,8 @@ h1 .lg
 	font-weight: 700
 	line-height: 80px
 	display: block
+	@media (max-width:1200px) 
+		font-size: 40px
 
 h1 .sm
 	font-size: 40px
@@ -46,6 +49,8 @@ h6
 	height: 2px;
 	background-color: #e6e6e6;
 	margin: 120px 0
+	@media (max-width:1024px)
+		margin: 80px 0
 
 .btn
 	display: inline-block
@@ -130,6 +135,8 @@ header
 .menu_item
 	margin-left: 90px
 	position: relative
+	@media (max-width:1024px)
+		margin-left: 50px
 
 .menu_item:after
 	content: "\\\\"
@@ -142,6 +149,8 @@ header
 	left: 100%
 	top: 1px
 	margin-left: 40px
+	@media (max-width:1024px)
+		margin-left: 20px
 
 .menu_item:last-child:after
 	display: none
@@ -160,11 +169,12 @@ header
 /* banner */
 
 .banner 
- 	padding-top: 450px
+ 	padding-top: 43vh
  	padding-bottom: 150px
   height: calc(100vh+50px)
   text-align: center
   background: url("../img/banner.png") no-repeat center
+  background-size: cover
 
 .btn-wrap
 	padding-bottom: 130px
@@ -188,6 +198,8 @@ header
 	text-transform: uppercase
 	position: relative
 	margin-right: 40px
+	@media (max-width:1024px)
+		font-size: 26px
 
 .heading h2:after
 	content: ""
@@ -200,6 +212,9 @@ header
 	top: 50%
 	margin-left: 19px
 	margin-top: -25px
+	@media (max-width:1024px)
+		margin-left: 5px
+		left: 80%
 
 .heading p
 	color: #4d4d4d
@@ -207,6 +222,9 @@ header
 	font-weight: 400
 	line-height: 25px
 	text-transform: uppercase
+	@media (max-width:1024px)
+		font-size: 14px
+		line-height: 18px
 
 .about-wrap
 	display: flex
@@ -324,7 +342,7 @@ header
 	align-items: center
 	background: url("../img/qoute.png") no-repeat center top
 	background-size: cover
-/* qoute */
+
 .quote
 	text-align: center
 
@@ -336,6 +354,9 @@ header
 	position: relative
 	padding: 0 70px
 	margin-bottom: 33px
+	@media (max-width:1024px)
+		font-size: 35px
+
 
 .block_text:after, .block_text:before
 	content: '"'
@@ -344,6 +365,8 @@ header
 	font-size: 110px;
 	font-weight: 700;
 	line-height: 60px; 
+	@media (max-width:1024px)
+		font-size: 80px;
 
 .block_text:before
 	left: 0
@@ -381,6 +404,9 @@ header
  	width: 269px
  	padding: 25px 15px 30px
  	text-align: center
+ 	@media (max-width:1024px)
+ 		padding: 25px 5px 30px
+ 		width: 220px
 
 .team-persone:hover
 	background: #f0f0f0
@@ -975,6 +1001,8 @@ header
 	display: flex
 	flex-wrap: wrap
 	justify-content: space-between
+	@media (max-width:1024px)
+		justify-content: center
 
 .blog-post
 	width: 555px
@@ -1088,6 +1116,8 @@ header
 	height: 162px
 	border: 2px solid rgba(255, 255, 255, 0.25)
 	margin-bottom: 20px
+	@media (max-width:1024px)
+		width: 230px
 
 
 /* contact */
@@ -1155,7 +1185,7 @@ header
 
 .font-control
 	display: block
-	width: 560px 
+	width: 600px 
 	height: 45px
 	border: 2px solid #d9d9d9
 	background-color: #fff
@@ -1175,6 +1205,7 @@ header
 	position: relative
 	margin-bottom: 10px
 	text-align: center
+	width: 100%
 
 .form-field span
 	position: absolute
@@ -1194,7 +1225,7 @@ header
 
 .form-field_pole
 	display: block
-	width: 560px
+	width: 600px
 	font-family: "Open Sans"
 	border: 2px solid #d9d9d9
 	background-color: #fff
@@ -1243,8 +1274,11 @@ header
 	border-right: 100vw solid transparent
 	border-top: 100px solid #fff
 
+
 .footer
 	margin: 40px 0
+	@media (max-width:1024px)
+		margin: 15px 0
 
 .footer-info
 	display: flex
@@ -1285,4 +1319,3 @@ header
 
 .footer-social li:hover i
 	color: #f39c12
-
