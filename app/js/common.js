@@ -15,6 +15,7 @@ $(function(){
 
 	$('.portfolio-slider').slick({
 		dots: true,
+		arrows: true,
 		appendArrows: '.portfolio-slider__buttons',
 		prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-chevron-left"></i></button>',
 		nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right"></i></button>'

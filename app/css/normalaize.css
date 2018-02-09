@@ -93,3 +93,10 @@ a {
     content-height: 0;
     content-clear: both;
     content-visibility: hidden; }
+
+/* for slick slider */
+.slick-slide:focus {
+  outline: none; }
+
+.slick-dots li button:focus {
+  outline: none; }
