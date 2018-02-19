@@ -5,7 +5,8 @@
 body {
   color: #4d4d4d;
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  overflow-x: hidden; }
 
 input, textarea {
   outline: none; }
@@ -23,6 +24,9 @@ h1 {
   font-weight: 300;
   line-height: 60px;
   margin-bottom: 90px; }
+  @media (max-width: 750px) {
+    h1 {
+      font-size: 24px; } }
 
 h1 .lg {
   font-size: 70px;
@@ -32,11 +36,17 @@ h1 .lg {
   @media (max-width: 1200px) {
     h1 .lg {
       font-size: 40px; } }
+  @media (max-width: 750px) {
+    h1 .lg {
+      font-size: 30px; } }
 
 h1 .sm {
   font-size: 40px;
   font-weight: 300;
   line-height: 60px; }
+  @media (max-width: 750px) {
+    h1 .sm {
+      font-size: 24px; } }
 
 h6 {
   color: #0d0d0d;
@@ -190,10 +200,10 @@ header {
 
 /* banner */
 .banner {
-  padding-top: 43vh;
+  padding-top: 45vh;
   padding-bottom: 150px;
-  height: -webkit-calc(100vh+50px);
-  height: calc(100vh+50px);
+  height: -webkit-calc(100vh+100px);
+  height: calc(100vh+100px);
   text-align: center;
   background: url("../img/banner.png") no-repeat center;
   -webkit-background-size: cover;
@@ -269,7 +279,15 @@ header {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
-          align-items: flex-start; }
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  @media (max-width: 1024px) {
+    .about-wrap {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
 
 .about-wrap-content {
   display: -webkit-box;
@@ -284,6 +302,9 @@ header {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1; }
+  @media (max-width: 1024px) {
+    .about-wrap-content {
+      margin-bottom: 30px; } }
 
 .about-wrap-content__icon {
   display: -webkit-box;
@@ -330,6 +351,13 @@ header {
 .about-wrap-img {
   position: relative;
   margin-left: 60px; }
+  @media (max-width: 1024px) {
+    .about-wrap-img {
+      width: 70vw;
+      margin: 0 auto; } }
+
+.about-wrap-img img {
+  width: 100%; }
 
 .about-wrap-img_icon {
   position: absolute;
@@ -357,21 +385,31 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  @media (max-width: 1024px) {
+    .box-skills {
+      display: inline-block; } }
 
 .box-skills_item {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
-          flex: 1;
-  width: 50%; }
+          flex: 1; }
+  @media (max-width: 1024px) {
+    .box-skills_item {
+      width: 80vw; } }
 
 .box-skills_item--img img {
   display: inline-block;
-  max-width: 100%; }
+  width: 100%; }
 
 .box-skills_item--img {
   padding-right: 50px;
   text-align: right; }
+  @media (max-width: 1024px) {
+    .box-skills_item--img {
+      width: 80vw;
+      margin: 0 auto;
+      padding: 0 0 50px 50px; } }
 
 .box-skills_item--content {
   padding-left: 45px; }
@@ -420,6 +458,9 @@ header {
   background: url("../img/qoute.png") no-repeat center top;
   -webkit-background-size: cover;
           background-size: cover; }
+  @media (max-width: 1024px) {
+    .section-bg {
+      height: 900px; } }
 
 .quote {
   text-align: center; }
@@ -473,6 +514,9 @@ header {
 .team {
   padding: 105px 0px 100px; }
 
+.team .wrapper {
+  padding: 0; }
+
 .team-personal {
   display: -webkit-box;
   display: -webkit-flex;
@@ -490,10 +534,10 @@ header {
   width: 269px;
   padding: 25px 15px 30px;
   text-align: center; }
-  @media (max-width: 1024px) {
+  @media (max-width: 1160px) {
     .team-persone {
-      padding: 25px 5px 30px;
-      width: 220px; } }
+      padding: 25px 1px 30px;
+      width: 40vw; } }
 
 .team-persone:hover {
   background: #f0f0f0;
@@ -610,10 +654,14 @@ header {
 
 .statistic {
   margin: 0 15px; }
+  @media (max-width: 1024px) {
+    .statistic {
+      width: 40vw;
+      margin: 0 auto; } }
 
 .statistic_icon {
-  width: 170px;
-  height: 170px;
+  width: 167px;
+  height: 167px;
   border: 2px solid #f39c12;
   -webkit-border-radius: 50%;
           border-radius: 50%;
@@ -634,6 +682,9 @@ header {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
+  @media (max-width: 1024px) {
+    .statistic_icon {
+      margin: 20px auto; } }
 
 .statistic_icon span:before {
   color: #fff; }
