@@ -772,13 +772,32 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  @media (max-width: 1024px) {
+    .box-pricing {
+      display: inline-block; } }
 
 .box-pricing-item {
   width: 27%;
   margin-right: 105px; }
+  @media (max-width: 1024px) {
+    .box-pricing-item {
+      width: 90vw;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .box-pricing .service-content_icon {
-  margin-left: 0;
+  margin: 20px;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
   width: 125px;
   height: 125px;
   font-size: 32px; }
@@ -787,7 +806,12 @@ header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px; }
 
 .pricing_item {
   border-top: 1px solid #e6e6e6;
@@ -1415,6 +1439,9 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  @media (max-width: 1024px) {
+    .contact-block {
+      display: inline-block; } }
 
 .contact-form {
   width: 53%; }
@@ -1425,6 +1452,11 @@ header {
       -ms-flex-negative: 47%;
           flex-shrink: 47%;
   padding-left: 55px; }
+  @media (max-width: 1024px) {
+    .contact-info {
+      width: 90%;
+      margin: 0 auto;
+      padding-left: 6%; } }
 
 .contact-info_title {
   margin-bottom: 30px; }
@@ -1487,10 +1519,18 @@ header {
   letter-spacing: -0.32px !important; }
 
 .contact-form {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  width: 620px; }
+  @media (max-width: 1024px) {
+    .contact-form {
+      width: 90%;
+      margin: 0 auto;
+      padding-left: 5px;
+      margin-bottom: 30px; } }
 
 .contact-form_title {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  margin-left: 5%; }
 
 .font-control {
   display: block;
@@ -1503,9 +1543,9 @@ header {
   font-weight: 400;
   line-height: 26px;
   padding: 0 25px; }
-
-.contact-form {
-  width: 620px; }
+  @media (max-width: 1024px) {
+    .font-control {
+      width: 100%; } }
 
 .font-control:focus, .form-field_pole:focus {
   border: 2px solid #f39c12; }
@@ -1543,6 +1583,9 @@ header {
   font-weight: 400;
   line-height: 26px;
   padding: 0 25px; }
+  @media (max-width: 1024px) {
+    .form-field_pole {
+      width: 100%; } }
 
 .btn-sub {
   margin-top: 17px;
