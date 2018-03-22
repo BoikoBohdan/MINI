@@ -2,7 +2,7 @@
 @import "_libs.sass"
 
 /* основные стили*/
-body 
+body, html
   color: #4d4d4d
   font-family: "Open Sans", Arial, sans-serif
   font-size: 16px
@@ -16,6 +16,8 @@ input, textarea
 	margin: 0 auto
 	padding: 0 40px
 	width: 100%
+	@media (max-width:460px)
+		padding: 0 20px
 
 
 h1
@@ -27,6 +29,11 @@ h1
 	margin-bottom: 90px
 	@media (max-width:750px)
 		font-size: 24px
+		line-height: 40px
+	@media (max-width:750px)
+		line-height: 20px
+	@media (max-width:500px)
+		font-size: 16px
 
 h1 .lg
 	font-size: 70px
@@ -37,6 +44,13 @@ h1 .lg
 		font-size: 40px
 	@media (max-width:750px)
 		font-size: 30px
+	@media (max-width:750px)
+		font-size: 24px
+		line-height: 80px
+	@media (max-width:500px)
+		font-size: 18px
+	@media (max-width: 400px)
+		font-size: 14px
 
 h1 .sm
 	font-size: 40px
@@ -44,6 +58,10 @@ h1 .sm
 	line-height: 60px
 	@media (max-width:750px)
 		font-size: 24px
+	@media (max-width:750px)
+		line-height: 30px
+	@media (max-width:500px)
+		font-size: 16px
 
 h6
 	color: #0d0d0d
@@ -91,16 +109,18 @@ h6
 .slick-dots li
 	display: inline-block
 	vertical-align: middle
-	margin: 0 5px
 
 .slick-dots li button
+	padding: 0
 	border-radius: 50%
+	margin: 0 2px
 	background: rgb(238, 238, 238)
 	border: 0px
 	text-indent: -999px
 	overflow: hidden
 	opacity: 0.3
-	height: 12px
+	width: 10px
+	height: 10px
 
 
 .slick-dots .slick-active button
@@ -114,6 +134,8 @@ header
 	right: 0
 	left: 0
 	z-index: 99
+	@media (max-width:1024px)
+		top: 35px
 
 .header-wrap 
 	display: flex
@@ -134,6 +156,11 @@ header
 	font-weight: 700
 	line-height: 45px
 	text-transformation: uppercase
+	@media (max-width:1024px)
+		width: 120px
+		height: 120px
+	@media (max-width:600px)
+		font-size: 36px
 
 .menu
 	list-style: none
@@ -177,23 +204,35 @@ header
 
 .banner 
  	padding-top: 45vh
- 	padding-bottom: 150px
+ 	padding-bottom: 100px
   height: calc(100vh+100px)
   text-align: center
   background: url("../img/banner.png") no-repeat center
   background-size: cover
+  @media (max-width: 600px)
+  	padding-top: 35vh
+  	height: 550px
+		
 
 .btn-wrap
 	padding-bottom: 130px
 
 .about
-	padding: 100px 0px
+	padding: 100px 0
+	@media (max-width: 760px)
+			padding: 	30px 0
 
 .heading
 	display: flex
 	align-items: center
 	max-width: 100%
 	margin: 0 auto 150px
+	@media (max-width: 760px)
+		margin-bottom: 50px
+	@media (max-width: 500px)
+		display: block
+		text-align: center		
+		margin-bottom: 50px
 
 .heading h2
 	color: #0d0d0d
@@ -207,6 +246,10 @@ header
 	margin-right: 40px
 	@media (max-width:1024px)
 		font-size: 26px
+		margin-right: -50px
+		width: 250px
+	@media (max-width: 500px)
+		width: 100%
 
 .heading h2:after
 	content: ""
@@ -216,12 +259,19 @@ header
 	width: 4px
 	height: 45px
 	left: 100%
-	top: 50%
+	top: 60%
 	margin-left: 19px
 	margin-top: -25px
 	@media (max-width:1024px)
 		margin-left: 5px
-		left: 80%
+		left: 60%
+	@media (max-width: 500px)
+		width: 	75px
+		height: 4px	
+		top: 200%	
+		left: 50%	
+		margin-left: -37px
+		
 
 .heading p
 	color: #4d4d4d
@@ -232,6 +282,8 @@ header
 	@media (max-width:1024px)
 		font-size: 14px
 		line-height: 18px
+	@media (max-width: 500px)
+		display: none	
 
 .about-wrap
 	display: flex
@@ -247,7 +299,8 @@ header
 	flex: 1
 	@media (max-width:1024px)
 		margin-bottom: 30px
-		
+	@media (max-width:460px)
+		display: block	
 
 .about-wrap-content__icon
 	display: flex
@@ -261,9 +314,13 @@ header
 	border: 2px solid #f39c12
 	background-color: #fff
 	border-radius: 50%
+	@media (max-width:460px)
+		margin: 20px auto		
 
 .about-wrap-content__text h6
 	margin-bottom: 25px
+	@media (max-width:460px)
+		text-align: center
 
 .about-wrap-content__text p
 	color: #737373
@@ -277,6 +334,7 @@ header
 	font-size: 20px
 	font-weight: 300
 	margin-bottom: 40px
+
 .about-wrap-img
 	position: relative
 	margin-left: 60px
@@ -301,7 +359,6 @@ header
 
 /* box-skills */
 
-
 .box-skills
 	display: flex
 	@media (max-width:1024px)
@@ -309,31 +366,31 @@ header
 
 .box-skills_item
 	flex: 1
+	width: 50%
 	@media (max-width:1024px)
-		width: 80vw
+		flex: none
+		width: 100%
 
-.box-skills_item--img img
+.box-skills__item--img img 
 	display: inline-block
-	width: 100%
+	max-width: 100%
 
-.box-skills_item--img
+.box-skills__item--img
 	padding-right: 50px
 	text-align: right
 	@media (max-width:1024px)
-		width: 80vw
-		margin: 0 auto
-		padding: 0 0 50px 50px
- 
-.box-skills_item--content
-	padding-left: 45px
+		padding: 0
+		text-align: center
 
-
+.box-skills__item--content
+	padding-left: 40px
+	@media (max-width:1024px)
+		padding: 20px 0 0 0 
 
 /* bars */
 
 .box-bars
 	margin-top: 26px
-
 
 .bars
 	margin-bottom: 35px
@@ -371,6 +428,9 @@ header
 	background-size: cover
 	@media (max-width:1024px)
 		height: 900px
+	@media (max-width:760px)
+		height: 500px	
+
 
 .quote
 	text-align: center
@@ -385,6 +445,17 @@ header
 	margin-bottom: 33px
 	@media (max-width:1024px)
 		font-size: 35px
+	@media (max-width:760px)
+		font-size: 	28px
+		line-height: 	36px
+	@media (max-width:460px)
+		font-size: 24px
+		padding: 0 30px
+	@media (max-width:380px)
+		padding: 0 5px
+		font-size: 16px
+		padding: 0 30px
+		
 
 
 .block_text:after, .block_text:before
@@ -410,6 +481,8 @@ header
 	font-weight: 700
 	line-height: 30px
 	text-transform: uppercase
+	@media (max-width:760px)
+		font-size: 	21px
 
 .quote-author:before
 	content: ""
@@ -423,23 +496,27 @@ header
 
 .team
 	padding: 105px 0px 100px
-	@media (max-width:1160px)
-
-.team .wrapper
-	padding: 0
+	@media (max-width:760px)
+		padding: 	50px 0
 
 .team-personal
  	display: flex
  	justify-content: space-between
  	flex-wrap: wrap
+ 	@media (max-width:850px)
+ 		justify-content: center
 
 .team-persone
  	width: 269px
  	padding: 25px 15px 30px
  	text-align: center
  	@media (max-width:1160px)
- 		padding: 25px 1px 30px
+ 		padding: 25px 50px 30px
  		width: 40vw	
+ 	@media (max-width:700px)
+ 		width: 60vw
+ 	@media (max-width:500px)
+ 		width: 80vw
 
 
 .team-persone:hover
@@ -458,6 +535,9 @@ header
 	justify-content: center
 	position: relative
 	margin: 0 auto
+	@media (max-width:700px)
+		width: 150px
+		height: 150px
 
 .team-persone_img:after
 	content: ""
@@ -520,6 +600,9 @@ header
 .team-persone-social .socil_link
 	font-size: 18px
 	margin-right: 18px
+	@media (max-width:360px)
+		margin-right: 5px
+		font-size: 16px
 
 .team-persone-social .socil_link:last-child
 	margin-right: 0
@@ -528,6 +611,9 @@ header
 	color: #f39c12
 
 /* result */
+.statistic-section
+	@media (max-width:760px)
+			height: 	900px
 
 .statistic-border
 	display: flex
@@ -539,7 +625,7 @@ header
 .statistic 
 	margin: 0 15px
 	@media (max-width:1024px)
-		width: 40vw	
+		width: 30vw	
 		margin: 0 auto
 
 .statistic_icon
@@ -555,6 +641,9 @@ header
 	transition: all 0.3s
 	@media (max-width:1024px)
 		margin: 20px auto
+	@media (max-width:500px)
+		width: 100px
+		height: 100px
 
 .statistic_icon span:before
 	color: #fff
@@ -568,24 +657,35 @@ header
 .statistic-border h5
 	font-size: 25px
 	font-weight: 700
+	@media (max-width:500px)
+		font-size: 18px
 
 .statistic-border h5 span
 	font-size: 45px
 	display: block
+	@media (max-width:500px)
+		font-size: 24px
 
 /*service */
 
 .service
 	padding: 105px 0 120px 0 
+	@media (max-width:760px)
+		padding: 	50px 0
 
 .service-content-items
 	display: flex
 	justify-content: center
 	align-items: center
 	text-align: center
+	@media (max-width:500px)
+		display: block
 
 .service-content-item
 	padding-right: 30px
+	@media (max-width:500px)
+		margin-bottom: 50px
+		padding-right: 0
 
 .service-content-item:last-child
 	padding-right: 0
@@ -634,6 +734,7 @@ header
 		display: flex
 		align-items: center
 
+
 .box-pricing	.service-content_icon
 	margin: 20px
 	flex: none
@@ -646,12 +747,25 @@ header
 	display: flex
 	justify-content: center
 	margin-top: 50px
+	@media (max-width:600px)
+		margin-left: -30px
+	@media (max-width:400px)
+		margin-left: -18px
 
 .pricing_item
 	border-top: 1px solid #e6e6e6
 	border-bottom: 1px solid #e6e6e6
 	width: 250px
 	text-align: center
+	@media (max-width:850px)
+		width: 200px
+	@media (max-width:600px)
+		width: 160px
+	@media (max-width:500px)
+		width: 120px	
+	@media (max-width:400px)
+		width: 105px
+
 
 .pricing_item:first-child
 	border-left: 1px solid #e6e6e6
@@ -681,6 +795,8 @@ header
 	background: #f39c12
 	left: 40%
 	margin-left: 5px
+	@media (max-width:500px)
+		left: 20%
 
 .pricing_list li
 	list-style-type: none
@@ -689,6 +805,8 @@ header
 	font-size: 15px
 	font-weight: 400
 	line-height: 24px
+	@media (max-width:500px)
+		font-size: 16px	
 
 .pricing_list li:nth-child(odd)
 	background-color: #fafafa
@@ -699,12 +817,16 @@ header
 .pricing-fotter 
 	padding: 40px 0
 	background: #fafafa
+	@media (max-width:500px)
+		padding: 20px 0
 
 .pricing-fotter .btn
 	border: 2px solid #f39c12
 	color: #0d0d0d
 	font-weight: 700
 	font-size: 14px
+	@media (max-width:500px)
+		padding: 0 10px
 
 .pricing-fotter .btn:hover
 	color: #fff
@@ -750,6 +872,8 @@ header
 	text-align: center
 	margin-bottom: 30px
 
+
+
 .response .response-name:after
 	content: ""
 	position: absolute
@@ -768,6 +892,11 @@ header
 	font-style: italic
 	line-height: 30px
 	padding: 0 125px
+	@media (max-width:700px)
+		padding: 0
+	@media (max-width:500px)
+		font-size: 16px
+		line-height: 20px
 
 .respnonse_img
 	display: flex
@@ -777,10 +906,11 @@ header
 
 
 /* portfolio */ 
-
 .portfolio 
 	padding: 120px 0
 	position: relative
+	@media (max-width:760px)
+			padding: 50px	0
 
 .portfolio .wrapper
 	position: relative
@@ -794,11 +924,20 @@ header
 
 .portfolio .slide-img
 	height: 580px
+	@media (max-width:700px)
+		height: 400px
+
+.portfolio .slide-img img
+	width: 100%
+	height: 100%
+
 
 .portfolio .slide-img_none
 	background: #333
 	max-width: 1173px
 	height: 580px
+	@media (max-width:700px)
+		height: 400px
 
 .slide-context
 	margin-top: 110px
@@ -843,8 +982,17 @@ header
 
 .portfolio-slider__buttons
 	position: absolute
-	top: 43%
+	top: 68%
 	right: 48%
+	@media (max-width:1024px)
+		top: 72%
+	@media (max-width:850px)
+		top: 70%
+	@media (max-width:700px)
+		top: 64%
+	@media (max-width:500px)
+		top: 60%
+		right: 40%
 
 .portfolio-slider__buttons .slick-arrow
 	width: 35px
@@ -857,6 +1005,8 @@ header
 	background: #fff
 	opacity: 1
 
+.portfolio .tab-cont
+	display: none
 
 
 .nav-tab-list
@@ -1019,6 +1169,10 @@ header
 
 .tweet-wrap-content
 	margin: 0 175px
+	@media (max-width:850px)
+		margin: 0 100px
+	@media (max-width:600px)
+		margin: 0 50px
 
 .tweet-wrap-text
 	color: #ffffff
@@ -1046,23 +1200,27 @@ header
 /* blog */
 .blog
 	padding: 120px 0
+	@media (max-width:760px)
+			padding: 	50px 0
 
 .blog-posts
 	display: flex
 	flex-wrap: wrap
 	justify-content: space-between
-	@media (max-width:1024px)
+	@media (max-width:1200px)
 		justify-content: center
 
 .blog-post
 	width: 555px
 	margin-bottom: 63px
+	@media (max-width:1200px)
+		width: 90vw
 
 .blog-posts-img
 	position: relative
 	margin-bottom: 24px
 	width: 100%
-	height: 300px
+	height: 500px
 	background-color: #b7b7b7
 	display: flex
 	justify-content: center
@@ -1086,15 +1244,23 @@ header
 	right: -1px
 	display: flex
 	align-items: flex-end
+	@media (max-width:700px)
+		bottom: -1px
+		width: 100%
 
 .blog-posts-img-footer_title
 	background: #fff
-	padding: 36px 36px 15px 20px
+	padding: 35px 0 15px 20px
 	color: #0d0d0d
 	font-size: 20px
 	font-weight: 700
 	line-height: 25px
 	text-transform: uppercase
+	@media (max-width:700px)
+		height: 100px
+		width: 100%
+	@media (max-width:390px)
+		font-size: 16px
 
 .blog-posts-img-footer_ico
 	font-size: 18px
@@ -1105,10 +1271,15 @@ header
 	display: flex
 	justify-content: center
 	align-items: center
+	@media (max-width:700px)
+		width: 100px
+		height: 100px
 
 .blog-posts-content
 	display: flex
 	justify-content: space-between
+	@media (max-width:350px)
+		margin-top: 40px
 
 .blog-posts-content_date
 	color: #808080
@@ -1142,6 +1313,8 @@ header
 
 .clients
 	text-align: center
+	@media (max-width:760px)
+		height: 1200px
 
 .client-header
 	color: #ffffff
@@ -1157,6 +1330,14 @@ header
 	align-items: center
 	justify-content: space-between
 	margin-top: 55px
+	@media (max-width:700px)
+		justify-content: center
+	
+.client-list li
+	@media (max-width:1124px)
+	 	width: 43vw
+	@media (max-width:700px)
+	 	width: 70vw
 
 .client-list a
 	display: flex
@@ -1166,9 +1347,10 @@ header
 	height: 162px
 	border: 2px solid rgba(255, 255, 255, 0.25)
 	margin-bottom: 20px
-	@media (max-width:1024px)
-		width: 230px
-
+	@media (max-width:1124px)
+		margin: 20px auto
+	@media (max-width:700px)
+	 	width: 100%
 
 /* contact */
 	
@@ -1266,6 +1448,7 @@ header
 .form-field
 	position: relative
 	margin-bottom: 10px
+	margin-left: -5px
 	text-align: center
 	width: 100%
 
@@ -1304,9 +1487,11 @@ header
 	background-color: #fff
 	color: #0d0d0d  
 	border-color: #f39c12
+	margin-left: -5px
 
 .btn-sub:hover
 	background-color: #f39c12
+
 
 
 
@@ -1363,6 +1548,9 @@ header
 
 .footer-right
 	margin-right: 20px
+	@media (max-width:550px)
+		margin: 0
+		font-size: 12px
 
 .footer-right:after
 	content: ''
@@ -1383,3 +1571,80 @@ header
 
 .footer-social li:hover i
 	color: #f39c12
+
+@media (max-width:550px)
+	.footer-design_by
+		display: none
+
+	.footer-right:after
+		display: none
+
+/*menu */
+
+.menu-toggle
+	display: none
+
+@media (max-width:991px)
+	.menu-toggle
+		display: inline-block
+		border: none
+		background-color: transparent
+		padding: 0
+		width: 37px
+		height: 25px
+		position: relative
+	
+	.menu-toggle span
+		display: block
+		height: 3px
+		width: 37px
+		top: 0
+		background-color: #fff
+		position: absolute
+
+	.menu-toggle span + span + span
+		margin-top: 16px
+	.menu-toggle span + span
+		margin-top: 8px
+
+	.menu
+		display: none
+		position: absolute
+		right: 0
+		top: 100%
+		width: 150px
+		background: #333
+		padding: 20px 0
+
+
+	.menu_item:after
+		content: ''
+	
+	.menu_item
+		margin: 10px 20px
+	
+	.menu_link:hover
+		color: #fff
+
+	.navigation
+		position: relative
+
+	.menu-toggle.active span
+		margin: 0
+
+	.menu-toggle span:nth-child(1) , .menu-toggle span:nth-child(2) , .menu-toggle span:nth-child(3)  
+		transition: all .4s ease-in-out
+
+	.menu-toggle.active span:nth-child(1) 
+		transform: rotate(-45deg)
+		bottom: 0px
+
+	.menu-toggle.active span:nth-child(3) 
+		transform: rotate(45deg)
+		top: 0px
+
+	.menu-toggle.active span:nth-child(2) 
+		background: rgba(111,111,111,.0)
+
+button
+	outline: 0

@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, 
-	user-scalable=no, maximum-scale=1">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<title>Главная</title>
-	<link href="https://fonts.googleapis.com/
-	css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" 
 	rel="stylesheet">
-	<link href="https://fonts.googleapis.com/
-	css?family=Lato:400,400i,700,700i"
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i"
 	 rel="stylesheet">
-	<link href="https://fonts.googleapis.com/
-	css?family=Montserrat:400,400i,700,700i" 
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i" 
 	rel="stylesheet">
 	<link rel="stylesheet" href="css/normalaize.css"> <!-- Подключаем normalize CSS -->
 	<link rel="stylesheet" href="css/icomoon.css"> <!-- Подключаем iconmoon шрифты -->
@@ -25,6 +21,11 @@
 			<div class="header-wrap">
 				<div class="logo"><a href="#">Mini</a></div>
 				<nav class="navigation">
+					<button class="menu-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 					<ul class="menu">
 						<li class="menu_item"> 
 							<a href="#" class="menu_link">About</a>
@@ -115,10 +116,10 @@
 			</div>
 			<div class="hr"></div>
 			<div class="box-skills">
-				<div class="box-skills_item box-skills_item--img">
+				<div class="box-skills_item box-skills__item--img">
 					<img src="img/webbrowser.png" alt="">
 				</div>
-				<div class="box-skills_item box-skills_item--content">
+				<div class="box-skills_item box-skills__item--content">
 					<div class="about-wrap-content">
 						<div class="about-wrap-content__icon">
 							<span class="icon-settings"></span>
@@ -129,38 +130,39 @@
 								Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
 							</p>
 						</div>
+					</div>
+					<div class="box-bars">
+					<div class="bars">
+						<div class="bars-title">Design <span>/</span><span class="procent"> 88%</span></div>
+						<div class="bars-line">
+							<div style="width: 88%"></div>
+						</div>
+					</div>
+					<div class="bars">
+						<div class="bars-title">Development <span>/</span><span class="procent"> 76%</span></div>
+						<div class="bars-line">
+							<div style="width: 76%"></div>
+						</div>
+					</div>
+					<div class="bars">
+						<div class="bars-title">WordPress <span>/</span><span class="procent"> 81%</span></div>
+						<div class="bars-line">
+							<div style="width: 81%"></div>
+						</div>
+					</div>
+					<div class="bars">
+						<div class="bars-title">Drupal <span>/</span><span class="procent"> 71%</span></div>
+						<div class="bars-line">
+							<div style="width: 71%"></div>
+						</div>
+					</div>
 				</div>
-				<div class="box-bars">
-								<div class="bars">
-									<div class="bars-title">Design <span>/</span><span class="procent"> 88%</span></div>
-									<div class="bars-line">
-										<div style="width: 88%"></div>
-									</div>
-								</div>
-								<div class="bars">
-									<div class="bars-title">Development <span>/</span><span class="procent"> 76%</span></div>
-									<div class="bars-line">
-										<div style="width: 76%"></div>
-									</div>
-								</div>
-								<div class="bars">
-									<div class="bars-title">WordPress <span>/</span><span class="procent"> 81%</span></div>
-									<div class="bars-line">
-										<div style="width: 81%"></div>
-									</div>
-								</div>
-								<div class="bars">
-									<div class="bars-title">Drupal <span>/</span><span class="procent"> 71%</span></div>
-									<div class="bars-line">
-										<div style="width: 71%"></div>
-									</div>
-								</div>
-							</div>
+				</div>
 			</div>
 		</div>
 	</section>
 	<section class="section-bg">
-		<div class="wrapper">
+		<div class="wrapper quote-wrapper">
 			<div class="quote">
 				<blockquote class="block_text">
 					Simplicity is about subtracting the obvious
@@ -258,21 +260,18 @@
 					<div class="statistic_icon"><span class="icon-stack"></span></div>
 					<div class="statistic_content">
 						<h5><span>743</span>Projects</h5>
-						</h6>
 					</div>
 				</div>
 				<div class="statistic">
 					<div class="statistic_icon"><span class="icon-user"></span></div>
 					<div class="statistic_content">
 						<h5><span>435</span>Clients</h5>
-						</h6>
 					</div>
 				</div>
 				<div class="statistic">
 					<div class="statistic_icon"><span class="icon-like"></span></div>
 					<div class="statistic_content">
 						<h5><span>225</span>Awards</h5>
-						</h6>
 					</div>
 				</div>
 			</div>
@@ -368,10 +367,9 @@
 					</div>
 				</div>
 			</div>
-		</div>
 	</section>
 	<section class="section-bg response">
-		<div class="wrapper">
+		<div class="wrapper wrapper-response">
 			<div class="testimonial-slider">
 				<div class="slide1">
 			 		<div class="response">
@@ -405,7 +403,6 @@
 			 	</div>
 		 	</div>
 		</div>
-	</section>
 	</section>
 	<section class="portfolio">
 		<div class="wrapper">
@@ -571,10 +568,10 @@
 			<div class="tweet-wrap">
 			 	<div class="tweet-wrap-img"><img src="img/twitter.png" alt=""></div>
 			 	<div class="tweet-wrap-content">
-			 		<p class="tweet-wrap-text">
+			 		<h4 class="tweet-wrap-text">
 			 			Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, 
 			 			nec sagittis sem nibh id elit. Duis sed odio sit amet nibh <a href="ow.ly/ttlwd" class="tweet-wrap_link">ow.ly/ttlwd</a>
-			 		</p>
+			 		</h4>
 			 		<span class="tweet-wrap_time">3 hours ago</span>
 			 	</div>
 		 	</div>
@@ -739,13 +736,13 @@
 						<li class="contact-info-list_item">
 							<span class="contact-info-list_item_ico"><i class="fa fa-phone"></i></span>
 							<span class="contact-info-list_item_text">
-								<a href="tel: +6131468728">+61 3146 8728</a>, 
-								<a href="tel: +6109876543">+61 0987 6543</a>
+								<a href="tel:+6131468728">+61 3146 8728</a>, 
+								<a href="tel:+6109876543">+61 0987 6543</a>
 							</span>
 						</li>
 						<li class="contact-info-list_item">
 							<span class="contact-info-list_item_ico"><i class="fa fa-envelope"></i></span>
-							<span class="contact-info-list_item_text"><a href="mailto: support@envato.net">support@envato.net</a></span>
+							<span class="contact-info-list_item_text"><a href="mailto:support@envato.net">support@envato.net</a></span>
 						</li>
 					</ul>
 				</div>
@@ -776,8 +773,8 @@
 			</div>
 		</div>
 	</section>
-	<script type="text/javascript" src="js/libs.min.js"></script>
+	<script src="js/libs.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyD_nm7fj3cbHlyO8FKAU2jFqlR71ZwlyIU"> </script>
-	<script type="text/javascript" src="js/common.js"></script><!-- Подключаем  наших скриптов -->
+	<script src="js/common.js"></script><!-- Подключаем  наших скриптов -->
 </body>
 </html>
