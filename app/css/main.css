@@ -353,9 +353,7 @@ header {
           flex-wrap: wrap; }
   @media (max-width: 1024px) {
     .about-wrap {
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; } }
+      display: block; } }
 
 .about-wrap-content {
   display: -webkit-box;

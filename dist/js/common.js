@@ -1,4 +1,10 @@
 $(function(){
+
+	$('.menu-toggle').click(function(){
+		$(this).toggleClass('active')
+		$('.menu').slideToggle('400')
+	})
+
 	$('.tabs a').click(function(){
 		$(this).parents('.tab-wrap').find('.tab-cont').addClass('hide');
 		$(this).parent().siblings().removeClass('active');
